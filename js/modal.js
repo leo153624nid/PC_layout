@@ -23,3 +23,25 @@ modal.addEventListener('click', (event) => {
     } 
 })
 
+// Создание "Х" для закрытия модального окна
+let xBtn = document.createElement('div');
+xBtn.className = 'xclose';
+xBtn.innerText = 'X';
+
+modalInner.prepend (xBtn);
+
+xBtn.style.cssText = `
+    font-size:20px; 
+    position:relative; 
+    display:inline; 
+    padding:10px; 
+    bottom:75px; 
+    left:240px; 
+    cursor:pointer;
+`; 
+
+// Закрытие модального окна по клику "Х"
+xBtn.addEventListener('click', () => {
+    modal.style.display = '';
+}) 
+
