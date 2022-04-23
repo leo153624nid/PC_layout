@@ -25,7 +25,7 @@ modal.addEventListener('click', (event) => {
 
 // Создание "Х" для закрытия модального окна
 let xBtn = document.createElement('div');
-xBtn.className = 'xclose';
+// xBtn.className = 'xclose';  не используется
 xBtn.innerText = 'X';
 
 modalInner.prepend (xBtn);
