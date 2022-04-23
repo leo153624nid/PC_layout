@@ -6,6 +6,13 @@ const links = navbar.querySelectorAll('a');
 links.forEach ( (link) => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
-        console.log(document.querySelector(link.getAttribute('href')));
+        const section = document.querySelector(link.getAttribute('href'));
+
+        if (section) {
+            section.scrollIntoView({
+                block: "center",
+                behavior: "smooth",
+            })
+        }
     })    
 })
