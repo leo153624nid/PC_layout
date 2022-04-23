@@ -9,10 +9,17 @@ links.forEach ( (link) => {
         const section = document.querySelector(link.getAttribute('href'));
 
         if (section) {
-            section.scrollIntoView({
-                block: "center",
+            // section.scrollIntoView({
+            //     block: "start",
+            //     behavior: "smooth",
+            // })
+
+            // Кроссбраузерный плавный скрол
+            seamless.scrollIntoView(section, {
                 behavior: "smooth",
-            })
+                block: "start",
+                inline: "center",
+            });
         }
     })    
 })
