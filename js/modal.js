@@ -35,8 +35,8 @@ xBtn.style.cssText = `
     position:relative; 
     display:inline; 
     padding:10px; 
-    bottom:75px; 
-    left:240px; 
+    bottom:100px; 
+    left:330px; 
     cursor:pointer;
 `; 
 
