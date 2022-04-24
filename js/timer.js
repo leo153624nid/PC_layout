@@ -12,9 +12,13 @@
         const minutes = date.getMinutes();
         const seconds = date.getSeconds();
 
-        hoursBlock.textContent = hours;
-        minutesBlock.textContent = minutes;
-        secondsBlock.textContent = seconds;
+        const fHours = hours > 10 ? hours : '0' + hours;
+        const fMinutes = minutes > 10 ? minutes : '0' + minutes;
+        const fSeconds = seconds > 10 ? seconds : '0' + seconds;
+
+        hoursBlock.textContent = fHours;
+        minutesBlock.textContent = fMinutes;
+        secondsBlock.textContent = fSeconds;
     };
 
     updateTimer();
