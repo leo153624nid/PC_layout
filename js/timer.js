@@ -66,9 +66,4 @@
 
     updateTimer();
     interval = setInterval(updateTimer, 500);
-
-    
-
-    
-
 })();
